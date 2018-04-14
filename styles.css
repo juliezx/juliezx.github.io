@@ -1,0 +1,382 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 70vw;
+  align-content: center;
+  font-size: 1.2em;
+  margin: auto;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 0.3fr 5fr 0.1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+header {
+  grid-row: 1;
+  grid-column: 1/2;
+  /* background-color: red; */
+  padding-top: 2em;
+  margin-bottom: 2em;
+}
+header a, header img {
+  padding: 0;
+  margin: 0;
+  max-width: 2.5em;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  /*specify type and color*/
+  font-family: Tahoma;
+  /* color: #666666; */
+}
+/*******************navigation bar*******************/
+
+nav {
+  grid-row: 1;
+  grid-column: 2/3;
+  overflow: hidden;
+  /* background-color: purple; */
+  position: relative;
+  bottom: 0;
+}
+
+nav ul {
+  padding-top: 2em;
+  display: flex;
+  /* background-color: orange; */
+  padding-right: 3em;
+  justify-content: space-between;
+}
+
+nav ul li {
+  font-size: 1.2em;
+}
+
+/*************home page css*************/
+
+.homepageleft {
+  grid-row: 2;
+  grid-column: 1/2;
+  /* background-color: blue; */
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.homepageleft img {
+  float: right;
+  max-width: 100%;
+}
+
+.homepageleft h3 {
+  float: right;
+  font-size: 0.5em;
+}
+
+.homepageright {
+  grid-row: 2;
+  grid-column: 2/3;
+  /* background-color: pink; */
+  margin-top: 2.5em;
+  margin-left: 1.5em;
+  font-size: 1.7em;
+  /*specify type*/
+  font-family: Georgia;
+  text-align: left;
+  line-height: 1.7em;
+}
+
+.homepageright p {
+  padding-top: 2em;
+}
+
+/*******************footer*******************/
+
+footer {
+  /* background-color: yellow; */
+  grid-row: 3;
+  grid-column: 1/3;
+  border-top: 3px solid #bb5368;
+}
+
+footer p, a {
+  padding: 0.5em;
+  float: left;
+  font-size: 1em;
+}
+
+/*design and arts page css*/
+
+main {
+  grid-row: 2;
+  grid-column: 1/3;
+  padding-bottom: 2em;
+}
+
+/*******************design page css*******************/
+
+.designpagemain {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.designpagemain a {
+  margin: 0;
+  padding: 0;
+}
+.designbox {
+  max-width: 30em;
+  margin: 1em;
+  font-size: 0.5em;
+  line-height: 2em;
+}
+
+.designbox img {
+  max-width: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
+
+.thumbnail:hover {
+  /* position: relative; */
+  opacity: 0.5;
+}
+.image_off, .designbox:hover .image_on{
+   display:none
+}
+.image_on, .designbox:hover .image_off{
+   display: flex;
+}
+
+/*********** sub-design page***********/
+.designpage section img {
+  max-width: 70%;
+  flex: 100%;
+}
+
+.designpage1 section img {
+  margin: 1.5em;
+}
+.designpage2 section img, .designpage4 section img {
+  max-width: 48%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+hr {    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;}
+
+.designpage5 section img, .designpage6 section img {
+  margin: 1.5em;
+  max-width: 40%;
+  flex-direction: row;
+}
+
+.designpage {
+  display: flex;
+  font-size: 1em;
+  margin: auto;
+  flex-wrap: wrap;
+  line-height: 1em;
+  text-align: center;
+  padding-bottom: 1.5em;
+}
+
+.designpage section p {
+  line-height: 1.5em;
+  text-align: left;
+  padding-top: 1.5em;
+  margin-left: 5.5em;
+  margin-right: 5.5em;
+  /* text-indent: 2.5em; */
+}
+
+/*******************arts page css*******************/
+
+.arts {
+  display: flex;
+  justify-content: center;
+}
+
+iframe {
+  width: 120%;
+  height: 100%;
+}
+
+/*******************about page css*******************/
+
+.aboutpageleft {
+  grid-row: 2;
+  grid-column: 1/2;
+  /* background-color: blue; */
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.aboutpageleft h3 {
+  float: right;
+  margin-top: 0.7em;
+  font-size: 0.5em;
+}
+
+.aboutpageleft img {
+  float: right;
+  max-width: 100%;
+}
+
+.aboutpageright {
+  grid-row: 2;
+  grid-column: 2/3;
+  /* background-color: pink; */
+  margin-top: 1em;
+  margin-left: 2em;
+  margin-right: 1.3em;
+  /*specify type*/
+  text-align: left;
+}
+
+.aboutpageright p {
+  line-height: 1.2em;
+  font-size: 1.1em;
+  padding-top: 2em;
+  /* text-indent: 2em; */
+  margin-bottom: -1em;
+}
+
+/************links and Typography**********/
+
+body {
+  font-family: sans-serif;
+}
+
+
+
+a {
+  font-family: Helvetica;
+  text-decoration: none;
+  color: black;
+  margin-bottom: -0.3em;
+}
+
+a:visited {
+  color: #666666;
+}
+
+a:hover {
+  color: #bb5368;
+}
+
+.active {
+  border-bottom: 3px solid #bb5368;
+}
+/********** Extra small devices (phones, 600px and down) *********/
+@media only screen and (max-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-rows: 0.1fr 0.5fr 2fr 1fr 0.1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  header {
+    grid-row: 1/2;
+    grid-column: 1/3;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  header a, header img {
+    padding: 0;
+    margin-left: 0;
+    max-width: 1.7em;
+  }
+  h1{
+    font-size: 1.7em;
+    float: right;
+  }
+  nav {
+    grid-row: 2/3;
+    grid-column: 1/3;
+  }
+  nav ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  nav ul li {
+    font-size: 1em;
+  }
+  .homepageleft{
+    grid-row: 3/4;
+    grid-column: 1/3;
+    margin: 0;
+    padding: 0;
+  }
+  .homepageleft img {
+    padding: 0;
+    margin: 0;
+  }
+  .homepageright{
+    grid-row: 4/5;
+    grid-column: 1/3;
+    margin: 0;
+    padding: 0;
+  }
+  .homepageright p{
+    font-size: 0.7em;
+    line-height: 1.2em;
+    padding: 0;
+    text-align: center;
+  }
+  .aboutpageleft{
+    grid-row: 3/5;
+    grid-column: 2/3;
+    margin: 0;
+    padding: 0;
+  }
+.aboutpageright{
+  grid-row: 3/5;
+  grid-column: 1/2;
+  font-size: 0.5em;
+  line-height: 1em;
+margin: 0;
+padding-right: 0.3em;
+}
+  main {
+    grid-row: 3/5;
+    grid-column: 1/3;
+    padding: 0;
+  }
+  .designpagemain {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 0.5em;
+  }
+
+  .designbox {
+    max-width: 10em;
+    margin: 0.5em;
+    font-size: 0.3em;
+    line-height: 1em;
+  }
+.designbox p {
+  display: none;
+}
+  p {
+    font-size: 0.5em;
+  }
+  footer {
+    grid-row: 5/6;
+    grid-column: 1/3;
+    font-size: 0.5em;
+  }
+}
