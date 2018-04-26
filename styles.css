@@ -181,7 +181,9 @@ hr {    display: block;
   max-width: 40%;
   flex-direction: row;
 }
-
+.designpage7 section img {
+  max-width: 100%
+}
 .designpage {
   display: flex;
   font-size: 1em;
