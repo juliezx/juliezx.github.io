@@ -156,14 +156,14 @@ main {
 
 /*********** sub-design page***********/
 .designpage section img {
-  max-width: 70%;
+  max-width: 80%;
   flex: 100%;
 }
 
 .designpage1 section img {
   margin: 1.5em;
 }
-.designpage2 section img, .designpage4 section img {
+.designpage6 section img, .designpage4 section img {
   max-width: 48%;
   flex-direction: row;
   justify-content: space-around;
@@ -264,7 +264,6 @@ body {
 
 
 a {
-  font-family: Helvetica;
   text-decoration: none;
   color: black;
   margin-bottom: -0.3em;
