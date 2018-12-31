@@ -130,7 +130,7 @@ main {
   padding: 0;
 }
 .designbox {
-  max-width: 30em;
+  max-width: 40em;
   margin: 1em;
   font-size: 0.5em;
   line-height: 2em;
@@ -160,10 +160,17 @@ main {
   flex: 100%;
 }
 
+.designpage section object, .designpage section iframe {
+  width: 80%;
+  height: 28em;
+}
+
 .designpage1 section img {
   margin: 1.5em;
+  max-width: 40%;
+  flex-direction: row;
 }
-.designpage6 section img, .designpage4 section img {
+.archivepage3 section img, .designpage4 section img{
   max-width: 48%;
   flex-direction: row;
   justify-content: space-around;
@@ -176,11 +183,6 @@ hr {    display: block;
     border-style: inset;
     border-width: 1px;}
 
-.designpage5 section img, .designpage6 section img {
-  margin: 1.5em;
-  max-width: 40%;
-  flex-direction: row;
-}
 .designpage7 section img {
   max-width: 100%
 }
@@ -266,7 +268,7 @@ body {
 a {
   text-decoration: none;
   color: black;
-  margin-bottom: -0.3em;
+  /* margin-bottom: -0.3em; */
 }
 
 a:visited {
